@@ -12,11 +12,20 @@ export interface PageConfig {
     navigationBarBackgroundColor?: string | undefined;
     navigationBarTextStyle?: string | undefined;
     navigationBarTitleText?: string | undefined;
+    navigationStyle?: string | undefined;
     backgroundColor?: string | undefined;
     backgroundTextStyle?: string | undefined;
+    backgroundColorTop?: string | undefined;
+    backgroundColorBottom?: string | undefined;
     enablePullDownRefresh?: boolean | undefined;
     disableScroll?: boolean | undefined;
     onReachBottomDistance?: number | undefined;
+    usingComponents?: { [key: string]: string} | undefined;
+    pageOrientation?: string | undefined;
+    initialRenderingCache?: string | undefined;
+    style?: string | undefined;
+    singlePage?: object | undefined;
+    restartStrategy?: string | undefined
 }
 
 export default class page extends component {

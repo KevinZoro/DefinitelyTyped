@@ -27,6 +27,7 @@ interface DefaultExport extends WxEnhances {
     component: wepy.Component;
     page: wepy.Page;
     mixin: wepy.Mixin;
+    $instance: wepy.Page;
     $createApp: typeof base.$createApp;
     $createPage: typeof base.$createPage;
     $isEmpty: typeof util.$isEmpty;
